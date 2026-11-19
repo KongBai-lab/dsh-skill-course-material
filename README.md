@@ -59,6 +59,20 @@ cp SKILL.md ~/.claude/skills/course-material/SKILL.md
 
 缺少可选 skill 时，skill 正文里的对应步骤按「用等价工具 + 保留同一检查点」执行；`md2docx` 是唯一影响最终交付格式的硬依赖。
 
+## 运行环境（DSHM / DSH）
+
+- **DSHM（鸿蒙端侧）**：DeepSeek Harness 的鸿蒙发行版，数据目录位于应用沙箱内，本文记为 `$DSH_HOME`。把本技能放到 `$DSH_HOME/skills/<name>.md`（单文件）或 `$DSH_HOME/skills/<name>/SKILL.md`（带 `refs/`、`scripts/` 等附属目录），新开会话后生效。
+- **DSH 桌面版（macOS / Windows / Linux）**：技能目录按对应版本文档（通常为 `~/.dsh/skills/`），结构与 DSHM 相同；区别只是 `$DSH_HOME` 不在鸿蒙应用沙箱内。
+- 两种环境的 `SKILL.md` 完全通用；**不要**把 DSHM 沙箱内的绝对路径写进配置或脚本，需要可移植路径时用环境变量。
+
+## 版权、第三方依赖与商标
+
+- **本项目**：MIT，见 [LICENSE](LICENSE)。示例图、示例数据由本项目程序生成，随 MIT 许可发布。
+- **第三方依赖**：纯 Markdown 指令，无运行时依赖；配套的 `md2docx` / `make-ppt` 为同作者 MIT 项目。
+- **字体与图片**：本仓库不含字体文件、不含第三方图片素材。
+- **商标与归属**：DSH、DSHM、DeepSeek Harness 是其各自所有者的产品名或商标；本项目是独立的第三方开源工具，与官方无隶属、赞助或背书关系。GitHub 为其所有者商标。
+- **代码来源**：本仓库代码为原创实现；如果后续引入第三方代码，会在此列出其来源与许可。
+
 ## 许可
 
 MIT，见 [LICENSE](LICENSE)。
