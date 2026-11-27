@@ -73,6 +73,11 @@ cp SKILL.md ~/.claude/skills/course-material/SKILL.md
 - **商标与归属**：DSH、DSHM、DeepSeek Harness 是其各自所有者的产品名或商标；本项目是独立的第三方开源工具，与官方无隶属、赞助或背书关系。GitHub 为其所有者商标。
 - **代码来源**：本仓库代码为原创实现；如果后续引入第三方代码，会在此列出其来源与许可。
 
+## 问题反馈
+
+- 优先在 [Issues](https://github.com/KongBai-lab/dsh-skill-course-material/issues) 提交，便于公开跟踪。
+- 不便公开时（含安全问题），发邮件到 **KongBaiLab@yeah.net**。
+
 ## 许可
 
 MIT，见 [LICENSE](LICENSE)。
